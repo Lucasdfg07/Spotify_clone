@@ -29,4 +29,6 @@ Rails.application.routes.draw do
         resources :favorites, only: :index
       end
   end
+
+  get "*path", to: "home#index", :constraints => lambda{|req| req.path !~ /\.(png|jpg|js|css|json)$/ }
 end
