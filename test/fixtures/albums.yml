@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  date: 2020-04-14 20:18:28
+  category: one
+  artist: one
+
+two:
+  title: MyString
+  date: 2020-04-14 20:18:28
+  category: two
+  artist: two
