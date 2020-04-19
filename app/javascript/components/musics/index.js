@@ -72,7 +72,7 @@ const Musics = (props) => {
           {playRandom == true ? 'Parar de tocar' : 'Tocar aleatoriamente'}
          </PlaySequenceButton>
 
-		 <audio controls ref={AudioRef} onEnded={() => NextSong()} className='is-hidden'>
+		    <audio controls ref={AudioRef} onEnded={() => NextSong()} className='is-hidden'>
            <source src={playing.file_url} />
         </audio>
        </Columns.Column>

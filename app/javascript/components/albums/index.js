@@ -21,7 +21,7 @@ const Albums = () => {
 
   useEffect(() => {
     fetchAlbum();
-  }, [])
+  }, []);
 
  return (
    <Fragment>

@@ -4,7 +4,7 @@ import Categories from '../common/categories';
 import { Columns } from 'react-bulma-components';
 import SearchService from '../../services/search';
 import CategoriesService from '../../services/categories';
-import ResultsTabs from '../common/results_tabs'
+import ResultsTabs from '../common/results_tabs';
 
 const Search = () => {
  const [albums, setAlbums] = useState([]);
