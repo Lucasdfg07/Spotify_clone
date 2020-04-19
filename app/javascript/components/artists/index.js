@@ -14,15 +14,23 @@ const DivVSpaced = styled.div`
 const Artists = () => {
  let { id } = useParams();
  const [artist, setArtist] = useState([]);
+ const [albums, setAlbums] = useState([]);
 
  async function fetchArtist() {
    const response = await ArtistsService.show(id);
    setArtist(response.data);
+   setAlbums(response.data['albums']);
  }
-
- useEffect(() => {
+  
+  useEffect(() => {
    fetchArtist();
- }, []);
+  }, []);
+
+  const albums_components = albums.map((album, key) =>
+   <Columns.Column desktop={{ size: 3 }} mobile={{ size: 6 }} key={key}>
+    <Album artist_name={album.artist_name} title={album.title} cover_url={album.cover_url} key={key} id={album.id}/>
+   </Columns.Column>
+  );
 
  return (
    <Fragment>
@@ -35,6 +43,15 @@ const Artists = () => {
      </Columns.Column>
     </Columns>
 
+    <Columns desktop={{size: 3}} className='has-text-centered'>
+       <DivVSpaced>
+         <Heading size={5} className='has-text-white'>Álbums</Heading>
+       </DivVSpaced>
+    </Columns>
+
+    <Columns>
+      {albums_components}
+    </Columns>
     <Musics songs={artist.songs || []} />
    </Fragment>
  );
