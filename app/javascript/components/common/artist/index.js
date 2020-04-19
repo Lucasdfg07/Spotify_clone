@@ -3,22 +3,23 @@ import { Heading, Columns, Image } from 'react-bulma-components';
 import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 import ArtistsService from '../../../services/artists';
+import { Link } from "react-router-dom";
 
 const DivVSpaced = styled.div`
  margin-top: 20px;
  margin-bottom: 20px;
 `
 
-const Artists = (props) => {
+const Artist = (props) => {
 
  return (
-   <Fragment>
-   		<Image src={props.photo}/>
+   	<Link to={`/artists/${props.id}`}>
+   	  <Image src={props.photo}/>
 
       <DivVSpaced>
         <Heading size={6} className='has-text-white'>{props.name}</Heading>
       </DivVSpaced>
-   </Fragment>
+    </Link>
 );
 }
-export default Artists;
+export default Artist;

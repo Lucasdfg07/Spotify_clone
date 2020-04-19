@@ -3,7 +3,7 @@ import { Columns, Tabs } from 'react-bulma-components';
 import styled, {css} from 'styled-components';
 import Album from '../../common/album';
 import Musics from '../../musics';
-import Artists from '../../common/artists';
+import Artist from '../../common/artist';
 
 const CustomTab = styled(Tabs.Tab)`
  a {
@@ -31,7 +31,7 @@ const ResultsTabs = (props) => {
   useEffect(() => {
    setArtists(props.artists.map((artist, key) =>
    <Columns.Column desktop={{ size: 3 }} mobile={{ size: 6 }} key={key}>
-      <Artists name={artist.name} photo={artist.photo_url}/>
+      <Artist name={artist.name} photo={artist.photo_url} id={artist.id}/>
    </Columns.Column>
   ));
   }, [props.songs]);
