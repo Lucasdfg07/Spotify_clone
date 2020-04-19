@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import { Heading, Image } from 'react-bulma-components';
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { Link } from "react-router-dom";
 
 const DivVSpaced = styled.div`

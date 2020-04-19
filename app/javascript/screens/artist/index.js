@@ -1,16 +1,16 @@
 import React, { Fragment } from 'react';
 import NavbarFooter from '../../components/common/navbar_footer';
-import Albums from '../../components/albums';
 import SectionWrapper from '../../components/common/section_wrapper'
+import Artists from '../../components/artists'
 
-const AlbumScreen = () => {
+const ArtistScreen = () => {
  return(
    <Fragment>
      <SectionWrapper>
-       <Albums/>
+       <Artists />
        <NavbarFooter/>
      </SectionWrapper>
    </Fragment>
 );
 }
-export default AlbumScreen;
+export default ArtistScreen;
