@@ -5,6 +5,7 @@ import ArtistsService from '../../services/artists';
 import { useParams } from 'react-router-dom';
 import Album from '../common/album';
 import Musics from '../musics';
+import Favorite from '../common/favorite';
 
 const DivVSpaced = styled.div`
  margin-top: 20px;
@@ -35,13 +36,23 @@ const Artists = () => {
  return (
    <Fragment>
    	<Columns className='is-vcentered is-mobile is-centered'>
-     <Columns.Column desktop={{size: 3}} className='has-text-centered'>
+      <Columns.Column desktop={{size: 3}} className='has-text-centered'>
        <Image src={artist.photo_url} />
        <DivVSpaced>
-         <Heading size={5} className='has-text-white'>{artist.name}</Heading>
+          <Columns>
+            <Columns.Column desktop={{size: 10}}>
+             <Heading size={5} className='has-text-white'>
+              {artist.name}
+             </Heading>
+            </Columns.Column>
+
+            <Columns.Column desktop={{size: 2}}>
+              <Favorite id={artist.id} kind='artists' favored={artist.favorite}/>
+            </Columns.Column>
+          </Columns>
        </DivVSpaced>
-     </Columns.Column>
-    </Columns>
+      </Columns.Column>
+     </Columns>
 
     <Columns className='is-vcentered is-mobile is-centered'>
        <DivVSpaced>

@@ -28,7 +28,9 @@ Rails.application.routes.draw do
 
         resources :favorites, only: :index
 
-        resources :artists
+        resources :artists do
+          concerns :favoritable, favoritable_type: 'Artist'
+        end
       end
   end
 
