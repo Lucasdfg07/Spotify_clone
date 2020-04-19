@@ -43,15 +43,22 @@ const Artists = () => {
      </Columns.Column>
     </Columns>
 
-    <Columns desktop={{size: 3}} className='has-text-centered'>
+    <Columns className='is-vcentered is-mobile is-centered'>
        <DivVSpaced>
-         <Heading size={5} className='has-text-white'>Álbums</Heading>
+         <Heading size={5} subtitle className='has-text-white'>Álbums</Heading>
        </DivVSpaced>
     </Columns>
 
     <Columns>
       {albums_components}
     </Columns>
+
+    <Columns className='is-vcentered is-mobile is-centered'>
+       <DivVSpaced>
+         <Heading size={5} subtitle className='has-text-white'>Músicas</Heading>
+       </DivVSpaced>
+    </Columns>
+    
     <Musics songs={artist.songs || []} />
    </Fragment>
  );
