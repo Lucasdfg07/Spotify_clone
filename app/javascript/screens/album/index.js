@@ -1,13 +1,16 @@
-  import React, { Fragment, useState } from 'react';
-  import NavbarFooter from '../../components/common/navbar_footer';
+import React, { Fragment } from 'react';
+import NavbarFooter from '../../components/common/navbar_footer';
+import Albums from '../../components/albums';
+import SectionWrapper from '../../components/common/section_wrapper'
 
-
-  const AlbumsScreen = () => {
-    return(
-      <Fragment>
-        <div>Albums Screen</div>
-        <NavbarFooter/>
-      </Fragment>
-    );
-  }
-  export default AlbumsScreen;
+const AlbumScreen = () => {
+ return(
+   <Fragment>
+     <SectionWrapper>
+       <Albums/>
+       <NavbarFooter/>
+     </SectionWrapper>
+   </Fragment>
+);
+}
+export default AlbumScreen;
