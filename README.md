@@ -3,7 +3,7 @@
 
 
 ## SpotCode
-This application is an app clone of spotify made with Ruby (Back end) and ReactJS (Front end) to play musics, see artist's album, their music and made your day more musicable!
+This application is an app clone of spotify made with Ruby (Back end) and ReactJS (Front end) to play musics, see artist's album, their music and made your day more musicable! Did on weekcode of OneBitCode.
 
 
 ## Technology 
