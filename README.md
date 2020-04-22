@@ -61,48 +61,46 @@ Here are the technologies used in this project.
 ### 4 - This is the Dashboard!
 
 ![Dashboard](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/14.png)
-
 ![Dashboard](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/13.png)
 
 ### 5 - You can see more of an album clicking above it.
 
 ![Dashboard](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/12.png)
-
 ![Dashboard](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/11.png)
 
 ### 6 - You can also search a music, artist or an album accord of it's category!!
 
-![Search tab](![Dashboard](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/10.png))
+![Search tab](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/10.png)
 
 ### 7 - Clicking on the category, will return:
 
   #### 7.1 - It's albums registered.
 
-![Search Albums tab](![Dashboard](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/9.png))
+![Search Albums tab](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/9.png)
 
   #### 7.2 - It's artists.
 
-![Search Artists tab](![Dashboard](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/8.png))
+![Search Artists tab](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/8.png)
 
   #### 7.3 - It's musics.
 
-![Search Musics tab](![Dashboard](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/7.png))
+![Search Musics tab](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/7.png)
 
 ### 8 - Clicking on the artist, you can see it's perfil like the image above.
 
-![Artist show](![Dashboard](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/6.png))
-![Artist show](![Dashboard](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/5.png))
-![Artist show](![Dashboard](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/4.png))
+![Artist show](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/6.png)
+![Artist show](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/5.png)
+![Artist show](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/4.png)
 
 ### 9 - You can access the favorite's tab too like:
   #### 9.1 - Favorite Albums.
-![Artist show](![Dashboard](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/3.png))
+![Artist show](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/3.png)
 
   #### 9.2 - Favorite Artists.
-![Artist show](![Dashboard](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/2.png))
+![Artist show](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/2.png)
 
   #### 9.3 - Favorite Musics.
-![Artist show](![Dashboard](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/1.png))
+![Artist show](https://github.com/Lucasdfg07/Spotify_clone/blob/master/public/readme_photos/1.png)
 
 
 ## Features
