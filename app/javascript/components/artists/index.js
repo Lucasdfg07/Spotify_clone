@@ -16,11 +16,13 @@ const Artists = () => {
  let { id } = useParams();
  const [artist, setArtist] = useState([]);
  const [albums, setAlbums] = useState([]);
+ const [favorite, setFavorite] = useState([]);
 
  async function fetchArtist() {
    const response = await ArtistsService.show(id);
    setArtist(response.data);
    setAlbums(response.data['albums']);
+   setFavorite(response.data['favorite']);
  }
   
   useEffect(() => {
@@ -47,7 +49,7 @@ const Artists = () => {
             </Columns.Column>
 
             <Columns.Column desktop={{size: 2}}>
-              <Favorite id={artist.id} kind='artists' favored={artist.favorite}/>
+              <Favorite id={artist.id} kind='artists' favored={favorite}/>
             </Columns.Column>
           </Columns>
        </DivVSpaced>
