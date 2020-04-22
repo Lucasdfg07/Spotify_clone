@@ -1,0 +1,46 @@
+<section class="container text-center">
+  <section class="col-md-4 offset-md-4 devise">
+    <h2>Edite seu Perfil</h2>
+
+    <hr />
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+
+      <div class="field">
+        <%= f.label :nome %><br />
+        <%= f.text_field :name %>
+      </div>
+
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autocomplete: "email" %>
+      </div>
+
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+      <% end %>
+
+      <div class="field">
+        <%= f.label :senha %> <br />
+        <%= f.password_field :password, autocomplete: "new-password" %><br />
+        <small>(Deixe em branco caso não queira modificar)</small>
+      </div>
+
+      <div class="field">
+        <%= f.label :confirme_sua_senha %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+      </div>
+
+      <br />
+
+      <div class="actions">
+        <%= f.submit "Salvar", class: 'btn btn-success' %>
+      </div>
+    <% end %>
+
+    <br />
+
+    <%= link_to "Voltar", :back, class: 'btn btn-warning' %>
+  </section>
+</section>

@@ -3,9 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
-gem 'devise'
-
 gem 'rack-cors'
+
+gem 'devise'
+gem 'bootstrap', '~> 4.4.1'
+gem 'jquery-rails'
 
 # PWA
 gem 'serviceworker-rails'

@@ -1,9 +1,13 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import FavoritesService from '../../../services/favorites';
 
 const Favorite = (props) => {
  const [favored, setFavored] = useState(props.favored);
+
+ useEffect(() => {
+ 	setFavored(props.favored);
+ }, [props.favored]);
 
  let FavoredButton;
 
